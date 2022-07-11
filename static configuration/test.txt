@@ -1,0 +1,14 @@
+####### Postman #######
+
+# GET
+url: localhost:3000/static/new_feature.html
+
+
+####### curl #######
+
+# GET
+curl localhost:3000/static/new_feature.html
+
+
+####
+Change newFeatureLaunched from false to true
