@@ -1,0 +1,13 @@
+####### Postman #######
+
+# GET
+url: localhost:3000/hello
+
+url: localhost:8081/hello
+
+####### curl #######
+
+# GET
+curl localhost:3000/hello
+
+curl localhost:8081/hello
