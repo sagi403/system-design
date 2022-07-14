@@ -1,0 +1,11 @@
+####### Postman #######
+
+# GET
+url: localhost:3000/index.html
+header: user: shay
+
+
+####### curl #######
+
+# GET
+curl -H "user: Shay" localhost:3000/index.html
