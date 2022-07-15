@@ -1,0 +1,31 @@
+####### Postman #######
+
+# POST - Memory
+url: localhost:3001/memory/foo
+header: Content-Type: application/json
+body: { "data": "This is some data in memory" }
+
+# GET - Memory
+url: localhost:3001/memory/foo
+
+# POST - Disk
+url: localhost:3001/disk/foo
+header: Content-Type: application/json
+body: { "data": "This is some data in disk" }
+
+# GET - Disk
+url: localhost:3001/disk/foo
+
+####### curl #######
+
+# POST - Memory
+curl --header 'content-type: application/json' localhost:3001/memory/foo --data '{"data": "This is some data in memory"}'
+
+# GET - Memory
+curl localhost:3001/memory/foo -w "\n"
+
+# POST - Disk
+curl --header 'content-type: application/json' localhost:3001/disk/foo --data '{"data": "This is some data in disk"}'
+
+# GET - Disk
+curl localhost:3001/disk/foo -w "\n"
