@@ -1,0 +1,12 @@
+PORT=3000 node server.js
+PORT=3001 node server.js
+
+####### Postman #######
+
+# GET
+url: localhost:8081/hello
+
+####### curl #######
+
+curl localhost:8081/hello
+
