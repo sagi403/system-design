@@ -1,0 +1,17 @@
+Postman
+
+# GET
+url: localhost:3000/hello
+
+# POST
+url: localhost:3000/hello
+header: Content-Type: application/json
+body: { "foo": "bar" }
+
+curl
+
+# GET
+curl localhost:3000/hello
+
+# POST
+curl --header 'content-type: application/json' localhost:3000/hello --data '{"foo": "bar"}'
