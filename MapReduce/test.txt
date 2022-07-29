@@ -1,0 +1,7 @@
+Generate new latencies:
+
+HOST=host1 node generate_latencies.js
+HOST=host2 node generate_latencies.js
+
+run the script:
+bash run.sh
