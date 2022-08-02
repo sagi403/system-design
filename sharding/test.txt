@@ -1,0 +1,36 @@
+DATA_DIR=database_0 PORT=3000 node server.js
+DATA_DIR=database_1 PORT=3001 node server.js
+node server_proxy.js
+
+
+####### Postman #######
+
+# POST
+url: localhost:8000/a
+header: Content-Type: application/json
+body: { "data": "This is some data." }
+
+# GET
+url: localhost:8000/a
+
+# POST
+url: localhost:8000/b
+header: Content-Type: application/json
+body: { "data": "This is some data." }
+
+# GET
+url: localhost:8000/b
+
+####### curl #######
+
+# POST
+curl --header 'content-type: application/json' --data '{"data": "This is some data."}' localhost:8000/a
+
+# GET
+curl localhost:8000/a -w "\n"
+
+# POST
+curl --header 'content-type: application/json' --data '{"data": "This is some data."}' localhost:8000/b
+
+# GET
+curl localhost:8000/b -w "\n"
