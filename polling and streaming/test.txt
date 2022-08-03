@@ -1,0 +1,5 @@
+node server.js
+MODE=stream NAME=Shay node client.js
+MODE=poll NAME=Dana node client.js
+
+(for i in `seq 1 10000`; do sleep 1; echo $i; done) | NAME=Bot node client.js
