@@ -1,0 +1,6 @@
+node server.js
+TOPIC_ID=stock_prices node subscriber.js
+TOPIC_ID=stock_prices node subscriber.js
+TOPIC_ID=news_alerts node subscriber.js
+(for i in `seq 1 10000`; do sleep 1; echo New Stock Price; done) | NAME=STOCK_BROKER TOPIC_ID=stock_prices node publisher.js
+(for i in `seq 1 10000`; do sleep 1; echo New Stock Price; done) | NAME=NEWS_STATION TOPIC_ID=news_alerts node publisher.js
