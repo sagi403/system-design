@@ -1,0 +1,18 @@
+# Start the Redis server (on Ubuntu)
+
+sudo service redis-server start
+
+# Test Redis server is running
+
+redis-cli 
+127.0.0.1:6379> ping
+PONG
+
+# Check the code
+
+node server.js
+url: http://localhost:3001/withcache/index.html
+
+# Close the server
+
+on the redis-cli type: shutdown
